@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./Style/index.scss";
-import ListComponent from "./Components/ListComponent";
+import ListComponent from "./Components/List/ListComponent";
 import CartComponent from "./Components/CartComponent";
 
 const App: FC = () => {

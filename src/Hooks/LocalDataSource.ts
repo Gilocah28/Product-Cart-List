@@ -37,7 +37,7 @@ import {
   pannaCottaThumbnail,
 } from "../assets/index";
 
-export interface DataStruction {
+interface DataStruction {
   image: {
     thumbnail: string;
     mobile: string;
