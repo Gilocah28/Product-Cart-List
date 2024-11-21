@@ -36,18 +36,11 @@ import {
   pannaCottaTablet,
   pannaCottaThumbnail,
 } from "../assets/index";
+import { DataStruction } from "../Context/DataProvider";
 
-interface DataStruction {
-  image: {
-    thumbnail: string;
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  };
-  name: string;
-  category: string;
-  price: number;
-}
+const ramdomId = () => {
+  return Math.floor(Math.random() * 99999999999);
+};
 
 export const LocalData: DataStruction[] = [
   {
@@ -57,6 +50,7 @@ export const LocalData: DataStruction[] = [
       tablet: waffleTable,
       desktop: waffleDesktop,
     },
+    id: ramdomId(),
     name: "Waffle with Berries",
     category: "Waffle",
     price: 6.5,
@@ -68,6 +62,7 @@ export const LocalData: DataStruction[] = [
       tablet: cremeBruleeTablet,
       desktop: cremeBruleeDesktop,
     },
+    id: ramdomId(),
     name: "Vanilla Bean Crème Brûlée",
     category: "Crème Brûlée",
     price: 7.0,
@@ -79,6 +74,7 @@ export const LocalData: DataStruction[] = [
       tablet: macaronTablet,
       desktop: macaronDesktop,
     },
+    id: ramdomId(),
     name: "Macaron Mix of Five",
     category: "Macaron",
     price: 8.0,
@@ -90,6 +86,7 @@ export const LocalData: DataStruction[] = [
       tablet: tiramisuTablet,
       desktop: tiramisuDesktop,
     },
+    id: ramdomId(),
     name: "Classic Tiramisu",
     category: "Tiramisu",
     price: 5.5,
@@ -101,6 +98,7 @@ export const LocalData: DataStruction[] = [
       tablet: baklavaTablet,
       desktop: baklavaDesktop,
     },
+    id: ramdomId(),
     name: "Pistachio Baklava",
     category: "Baklava",
     price: 4.0,
@@ -112,6 +110,7 @@ export const LocalData: DataStruction[] = [
       tablet: miringueTablet,
       desktop: miringueDesktop,
     },
+    id: ramdomId(),
     name: "Lemon Meringue Pie",
     category: "Pie",
     price: 5.0,
@@ -123,6 +122,7 @@ export const LocalData: DataStruction[] = [
       tablet: cakeTablet,
       desktop: cakeDesktop,
     },
+    id: ramdomId(),
     name: "Red Velvet Cake",
     category: "Cake",
     price: 4.5,
@@ -134,6 +134,7 @@ export const LocalData: DataStruction[] = [
       tablet: brownieTablet,
       desktop: brownieDesktop,
     },
+    id: ramdomId(),
     name: "Salted Caramel Brownie",
     category: "Brownie",
     price: 4.5,
@@ -145,6 +146,7 @@ export const LocalData: DataStruction[] = [
       tablet: pannaCottaTablet,
       desktop: pannaCottaDesktop,
     },
+    id: ramdomId(),
     name: "Vanilla Panna Cotta",
     category: "Panna Cotta",
     price: 6.5,

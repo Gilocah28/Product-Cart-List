@@ -1,0 +1,69 @@
+@import "../../Style/variable";
+
+.list {
+  h2 {
+    font-size: 32px;
+  }
+  .list-data {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .item {
+
+      max-width: 1200px;
+      flex: 1 1 calc(33.333% - 50px);
+
+      .image-container {
+        width: 250px;
+        height: 240px;
+        position: relative;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .btn {
+          position: absolute;
+          top: 90%;
+          left: 20%;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          border: solid $Rose900 1px;
+          border-radius: 20px;
+          transition: all 200ms linear;
+
+          img {
+            width: 25px;
+            margin-right: 10px;
+          }
+
+          &:hover{
+            cursor: pointer;
+            color: $Red;
+            border: solid $Red 1px;
+          }
+        }
+      }
+    }
+
+    .text-container {
+      margin: 35px 0;
+      .item-category {
+        font-size: 14px;
+        color: $Rose400;
+      }
+
+      .item-name {
+        color: $Rose900;
+      }
+
+      .item-price {
+        color: $Red;
+        font-weight: 500;
+      }
+    }
+  }
+}

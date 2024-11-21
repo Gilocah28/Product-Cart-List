@@ -1,4 +1,4 @@
-import waffleDesktop from "./Image/image-waffle-thumbnail.jpg";
+import waffleDesktop from "./Image/image-waffle-desktop.jpg";
 import waffleMobile from "./Image/image-waffle-mobile.jpg";
 import waffleTable from "./Image/image-waffle-tablet.jpg";
 import waffleThumbnail from "./Image/image-waffle-thumbnail.jpg";
@@ -43,6 +43,8 @@ import pannaCottaMobile from "./Image/image-panna-cotta-mobile.jpg";
 import pannaCottaTablet from "./Image/image-panna-cotta-tablet.jpg";
 import pannaCottaThumbnail from "./Image/image-panna-cotta-thumbnail.jpg";
 
+import cartImage from "./Image/icon-add-to-cart.svg";
+
 export {
   waffleDesktop,
   waffleMobile,
@@ -80,4 +82,5 @@ export {
   pannaCottaMobile,
   pannaCottaTablet,
   pannaCottaThumbnail,
+  cartImage
 };

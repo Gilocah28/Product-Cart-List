@@ -8,24 +8,23 @@
   font-size: inherit;
 }
 
-body{
+body {
   max-width: 1440px;
   height: 100vh;
   font-size: $fontRedHAtText;
   background-color: $Rose100;
-  margin: 50px;
+  margin: 60px;
+  font-family: $fontRedHAtText;
 }
 
-.App{
+.App {
   display: flex;
-  border: 1px solid black;
 
-  .List-Container{
+  .List-Container {
     flex: 2;
-    border: 1px solid blue;
   }
 
-  .Cart-Container{
+  .Cart-Container {
     flex: 1;
   }
 }
